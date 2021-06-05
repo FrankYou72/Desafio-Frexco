@@ -1,0 +1,140 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:darkslateblue;
+}
+
+div {
+    border-radius: 5px;
+    background-color: white;
+    align-self: center;
+    width: 800px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 5px 20px 10px;
+    box-shadow:rgb(136, 136, 136);
+    box-shadow: 2px 2px 4px 0.2px;
+}
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:darkslateblue;
+    color:antiquewhite;
+    font-size: 50px;
+    text-align: center;
+    height: 100px;
+    padding-top: 25px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+table {
+    position: relative;
+    text-align: center;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: darkslateblue;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;    
+}
+
+th {
+    background-color: darkslateblue;
+    color:white;
+    border-radius: 15px;
+}
+
+td {
+    border-style: solid;
+    border-bottom: black;
+    border-width: 1px;
+    border-collapse: collapse;
+}
+
+h1 {
+    text-align: center;
+    color:darkslateblue;
+}
+
+h2 {
+    text-align: center;
+    color:darkslateblue;
+}
+
+
+h3 {
+    margin-left: 500px;
+    text-align:center;
+    background-color: darkslateblue;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+a { 
+    text-decoration: none;
+    color:white;
+}
+
+a:visited {
+    color:white;
+}
+
+form {
+    position: relative;
+    text-align: center;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: darkslateblue;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    padding-top: 10px;
+}
+
+label {
+    color: darkslateblue;
+    font-size: 20px;
+    font-weight: 150;
+    text-align: left;
+    margin-top: 10px;
+}
+
+div #area {
+    text-align: left;
+    width : 400px;
+    margin-bottom: 5px;
+}
+
+input {
+    font-size: 20px;
+}
+
+
+input[type="submit"] {
+    margin-top: 15px;
+    color:white;
+    background-color: darkslateblue;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width : 100px;
+}
+
+div#back {
+    position: absolute;
+    text-align: center;
+    background-color:darkslateblue;
+    width: 125px;
+    color: white;
+    margin-left: 275px;
+    margin-top: 25px;
+    font-weight: 150;
+    height: min-content;
+}

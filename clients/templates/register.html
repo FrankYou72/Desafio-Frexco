@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Client App</title>
+    {% load static %}
+    <link rel='stylesheet' type='text/css' href="{% static 'style.css' %}" >
+</head>
+<body>
+    <header>Client Django App</header>
+   <div id="back"><a href='{% url "home" %}'> << Client List </a></div>
+<div>
+    <h2>Register new client</h2>
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+    <form action="{% url 'register' %}" method="post">
+    {% csrf_token %}
+        <div id='area'>
+        <label for='name'>Name</label><br>
+        <input type="text" name='name'><br>
+        </div>
+        <div id='area'>
+        <label for='email'>E-mail</label><br>
+        <input type="email" name='email'><br>
+        </div>
+        <div id='area'>
+        <label for='cpf'>CPF</label><br>
+        <input type="text" name='cpf'><br>
+        </div>
+
+
+    <input type="submit" value="Register" >
+    </form>
+</div>
+</body>
+</html>

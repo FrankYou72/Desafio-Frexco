@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Client App</title>
+    {% load static %}
+    <link rel='stylesheet' type='text/css' href="{% static 'style.css' %}" >
+</head>
+<body>
+    <header>Client Django App</header>
+
+<div>
+ <h1>Client list</h1>
+    <h3><a href='{% url "register" %}'>Register new client</a></h3>
+    {% if clients_list %}
+        <table>
+            <tr id= 'header'><th>Name</th><th>E-mail</th><th>CPF</th></tr>
+        {% for client in clients_list %}
+            <tr>
+                <td>{{client.name}}</td>
+                <td>{{client.email}}</td>
+                <td>{{client.cpf}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    {% else %}
+        <p>No clients are available.</p>
+    {% endif %}
+</div>
+</body>
+</html>
